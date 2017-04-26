@@ -8,4 +8,14 @@ L.tileLayer('https://api.mapbox.com/styles/v1/archie21/cj1gmpwzo000w2rnwph8quk42
 L.esri.featureLayer({
     url: 'https://services.nationalmap.gov/arcgis/rest/services/transportation/MapServer/41'
   }).addTo(map);
+    L.esri.featureLayer({
+    url: 'https://services.nationalmap.gov/arcgis/rest/services/transportation/MapServer/31'
+  }).addTo(map);
+   // L.esri.featureLayer({
+   // url: 'https://services.nationalmap.gov/arcgis/rest/services/transportation/MapServer/41'
+  //}).addTo(map);
+  //  L.esri.featureLayer({
+   // url: 'https://services.nationalmap.gov/arcgis/rest/services/transportation/MapServer/41'
+ // }).addTo(map);
+    
 });
