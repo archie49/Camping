@@ -13,7 +13,7 @@
 button {
   margin: 8px;
   padding: 8px;
-  background-color: white;
+  background-color: darkgreen;
   border-radius: 6px;
   font-size:14px;
   font-weight:900;
@@ -21,7 +21,7 @@ button {
 }
 button:hover {
   cursor:pointer;
-  background-color:darkgreen;
+  background-color:lightgreen;
   color:white;
 }
 #latlong {
@@ -38,4 +38,10 @@ button:hover {
 .floater2{
     position: absolute;
     z-index:999;
+}
+
+#pic{
+    position: absolute;
+    z-index: 999;
+    bottom: 50px;
 }
