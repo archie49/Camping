@@ -2,20 +2,24 @@
 <html>
     <head>
         <meta charset='utf-8' />
-        <title>Trails vs. Wildlife Ranges</title>
+        <title>How far from saftey</title>
         <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
         
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-        <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script> 
-        <script src="https://unpkg.com/esri-leaflet@2.0.8"></script>
+        <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet-src.js"></script>
         
-        <link rel="stylesheet" href="style/wildlife.css">
+        <link rel="stylesheet" href="style/wildlife.css"/>
         <script src="js/wildlife.js"></script>
         
     </head>
     <body>
-        <div id="map"></div>
-        <button id="click">Button</button>
-        
+        <div id="map"></div> 
+        <div id="buttoncontainer" class="floater">
+            <button id="long" >Longmont</button>
+            <button id="foco">Fort Collins</button>
+            <button id="love">Loveland</button>
+        </div>
+        <div id="latlong" class="floater2"></div>
+        <div id="pic"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Map_of_USA_CO.svg/220px-Map_of_USA_CO.svg.png"</div>
     </body>
 </html>
