@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded',function( ) {
 var map = L.map('map').setView([38.7712, -105.95], 7);
     
 L.tileLayer('https://api.mapbox.com/styles/v1/archie21/cj1gmpwzo000w2rnwph8quk42/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYXJjaGllMjEiLCJhIjoiY2l5MmNpeXRjMDAxbTJxcWphOWc0cjNjYSJ9.J3pcJEVhPcdyS1-Apr2kgg',
@@ -29,7 +29,7 @@ map.on('mousemove', showLatLng);
 map.addLayer(whereWeAreFromLayer);
     
      L.esri.featureLayer({
-    url: 'https://services.nationalmap.gov/arcgis/rest/services/structures/MapServer/6'
+    url: "https://services.nationalmap.gov/arcgis/rest/services/structures/MapServer/6"
   }).addTo(map);
     
 });
