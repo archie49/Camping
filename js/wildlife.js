@@ -17,17 +17,30 @@ document.getElementById("love").onclick = function(){
     
 document.getElementById("long").onclick = function(){
   map.setView([40.165, -105.102], 14);
-};  
-   
+};
+
+   document.getElementById("co").onclick = function(){
+  map.setView([39, -105], 7);
+};
+    
 function showLatLng(e) {
   document.getElementById("latlong").innerText = e.latlng.lat + " | " + e.latlng.lng;
 }
 map.on('mousemove', showLatLng);
+<<<<<<< HEAD
    
     L.esri.featureLayer({
     url: "https://services.nationalmap.gov/arcgis/rest/services/structures/MapServer/1"
   }).addTo(map);
      
+=======
+    
+    L.esri.featureLayer({
+        url: "https://services.nationalmap.gov/arcgis/rest/services/structures/MapServer/1"
+                        });
+map.addTo(map);
+    
+>>>>>>> origin/master
      L.esri.featureLayer({
     url: "https://services.nationalmap.gov/arcgis/rest/services/structures/MapServer/6"
   }).addTo(map);
